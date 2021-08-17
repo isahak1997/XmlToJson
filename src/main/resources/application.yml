@@ -1,0 +1,19 @@
+server:
+  servlet:
+    encoding:
+      charset: UTF-8
+spring:
+  session:
+    store-type: redis
+  redis:
+    host: localhost
+    port: 6379
+
+  main:
+    lazy-initialization: true
+  servlet:
+    multipart:
+      max-file-size: 10GB
+      max-request-size: 10GB
+upload:
+  path: /Users/isahaksahakian/programming/projects/Job-Test/src/main/resources/

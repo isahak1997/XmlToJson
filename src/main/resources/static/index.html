@@ -1,0 +1,18 @@
+<html>
+<head>
+    <style>
+        html{height:100%}body{background-color:#2590eb;height:100%}input[type=submit]{background-color:orange;border:none;text-decoration:none;color:#fff;padding:20px 20px;margin:20px 20px;cursor:pointer}.wrapper{width:100%;height:100%;display:flex;align-items:center;justify-content:center}.wrapper .file-upload{height:200px;width:200px;border-radius:100px;position:relative;display:flex;justify-content:center;align-items:center;border:4px solid #fff;overflow:hidden;background-image:linear-gradient(to bottom,#2590eb 50%,#fff 50%);background-size:100% 200%;transition:all 1s;color:#fff;font-size:100px}.wrapper .file-upload input[type=file]{height:200px;width:200px;position:absolute;top:0;left:0;opacity:0;cursor:pointer}.wrapper .file-upload:hover{background-position:0 -100%;color:#2590eb}
+    </style>
+</head>
+<body>
+<form class="form" method="POST" enctype="multipart/form-data" action="/upload">
+    <div class="wrapper">
+        <div class="file-upload">
+            <input type="file" name="file"/>
+            <img class="fa fa-arrow-up" src="https://image.flaticon.com/icons/png/512/136/136526.png" width="100">
+        </div>
+        <input type="submit" value="Upload file">
+    </div>
+</form>
+</body>
+</html>
